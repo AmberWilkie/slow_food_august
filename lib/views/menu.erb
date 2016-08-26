@@ -12,6 +12,6 @@
 <h2>Desserts</h2>
 <div id="desserts">
   <% @menu.desserts_array.each do |dessert| %>
-  <p><%= dessert[:name] %></p>
+  <p><%= dessert[:name] %> : $ <%= dessert[:price] %></p>
   <% end %>
 </div>

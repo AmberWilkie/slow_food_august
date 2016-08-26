@@ -9,3 +9,4 @@ Scenario: I try to view the dishes on the Menu page
   Then I should be on the menu page
   And I should see "Menu"
   And I should see "Cinnamon Rolls"
+  And I should see 90
