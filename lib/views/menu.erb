@@ -5,9 +5,15 @@
 
 <h2>Starters</h2>
 <div id="starters">
+  <% @menu.starters_array.each do |starter| %>
+  <p><%= starter[:name] %> : <%= starter[:price] %></p>
+  <% end %>
 </div>
 <h2>Mains</h2>
 <div id="mains">
+  <% @menu.mains_array.each do |main| %>
+  <p><%= main[:name] %> : <%= main[:price] %></p>
+  <% end %>
 </div>
 <h2>Desserts</h2>
 <div id="desserts">
