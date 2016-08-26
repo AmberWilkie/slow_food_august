@@ -1,3 +1,6 @@
+<% @menu = Menu.new({dish_one: {name: "sandwich", price: 80, category:"main"}, dish_two: {name: "Cinnamon Rolls", price: 90, category:"dessert"}, dish_three: {name: "olives", price: 30, category:"starter"}}) %>
+<!-- this has to get passed Dish.all in implementation -->
+
 <h1>Menu</h1>
 
 <h2>Starters</h2>
@@ -8,4 +11,7 @@
 </div>
 <h2>Desserts</h2>
 <div id="desserts">
+  <% @menu.desserts_array.each do |dessert| %>
+  <p><%= dessert[:name] %></p>
+  <% end %>
 </div>
