@@ -18,9 +18,9 @@ describe Menu do
 
   end
 
-  # it 'pulls a dessert from the Dish table' do
-  #   expect(subject.starters_array[0][:name]).to eq "olives"
-  # end
+  it 'pulls a dessert from the Dish table' do
+    expect(subject.desserts_array[0][:name]).to eq "Cinnamon Rolls"
+  end
 
 
 end
