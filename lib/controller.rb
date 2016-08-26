@@ -55,6 +55,10 @@ class SlowFood < Sinatra::Base
     erb :dish_creation
   end
 
+  get '/menu' do
+    erb :menu
+  end
+
   # Login in should direct to logged-in page where you can add food, etc.
 
   post '/auth/login' do
