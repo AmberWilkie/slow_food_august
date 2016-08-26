@@ -10,3 +10,7 @@ Scenario: I try to view the dishes on the Menu page
   And I should see "Menu"
   And I should see "Cinnamon Rolls"
   And I should see 90
+  And I should see "olives"
+  And I should see 30
+  And I should see "sandwich"
+  And I should see 80
